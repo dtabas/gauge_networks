@@ -6,6 +6,11 @@ import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
 from cvxpylayers.torch import CvxpyLayer
+'''import os
+import sys
+parent_dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+sys.path.append(parent_dir)
+__package__ = parent_dir'''
 from gauge_utils import gauge_map
 
 #%%%

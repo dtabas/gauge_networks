@@ -49,6 +49,8 @@ if __name__ == "__main__":
     plt.plot(X[0,:],X[1,:],'o')
     plt.title('Input set')
     plt.plot(0,0,'*')
+    plt.xticks([])
+    plt.yticks([])
     
     plt.subplot(122)
     P1 = Polytope(F.numpy(),g.numpy())
@@ -59,3 +61,8 @@ if __name__ == "__main__":
         (Z[i].numpy()*P1).plot(fill=False,edgecolor = (1-i/p,0,(i+1)/p))
     plt.title('Output set')
     plt.plot(0,0,'*')
+    plt.xticks([])
+    plt.yticks([])
+    
+    import os
+    print(os.getcwd())
